@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'prompt_Example' do
+  pod 'prompt', :path => '../'
+
+  target 'prompt_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
