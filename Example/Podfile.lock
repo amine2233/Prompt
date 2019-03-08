@@ -1,0 +1,16 @@
+PODS:
+  - Prompt (0.1.0)
+
+DEPENDENCIES:
+  - Prompt (from `../`)
+
+EXTERNAL SOURCES:
+  Prompt:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Prompt: 3ba2cbcec0ecd2ad17de127f5a6d1c07d11aff8e
+
+PODFILE CHECKSUM: 85e0024734ddd1d92650ad8d899397b2f939d2a3
+
+COCOAPODS: 1.5.3

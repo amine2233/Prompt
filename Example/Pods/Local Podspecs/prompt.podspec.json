@@ -1,0 +1,23 @@
+{
+  "name": "Prompt",
+  "version": "0.1.0",
+  "summary": "A short description of prompt.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/amine2233/prompt",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amine2233": "externe.amine.bensalah@allianz.fr"
+  },
+  "source": {
+    "git": "https://github.com/amine2233/prompt.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Prompt/Classes/**/*",
+  "frameworks": "UIKit"
+}

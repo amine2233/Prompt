@@ -1,5 +1,5 @@
 import XCTest
-import prompt
+import Prompt
 
 class Tests: XCTestCase {
     
