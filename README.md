@@ -22,7 +22,7 @@ pod 'prompt'
 
 ## Author
 
-amine2233, externe.amine.bensalah@allianz.fr
+amine2233, amine.bensalah@outlook.com
 
 ## License
 
