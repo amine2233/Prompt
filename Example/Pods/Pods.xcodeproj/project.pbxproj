@@ -17,8 +17,8 @@
 		93FC49E130494209C9DC1ED13B0C3560 /* Prompt-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2626CA2AAA4B4EC681D4F5A195609DE4 /* Prompt-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		992C9212588F4F62C66BECBED469C862 /* Prompt-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F10991B50270A4E32B8A07D65748A27F /* Prompt-dummy.m */; };
 		9BF38349C5E6659F8E4C38EDB3BAF969 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049FC01FDBC7D356D7138943FD16675E /* Prompt.swift */; };
-		AAF14E6D2232DE9C00C813FE /* PromptLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF14E692232DD3900C813FE /* PromptLevel.swift */; };
-		AAF14E6E2232DE9C00C813FE /* PromptStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF14E6B2232DE4B00C813FE /* PromptStyle.swift */; };
+		AAF14E712232DFD800C813FE /* PromptLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF14E6F2232DFD800C813FE /* PromptLevel.swift */; };
+		AAF14E722232DFD800C813FE /* PromptStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF14E702232DFD800C813FE /* PromptStyle.swift */; };
 		C9D4B18315F2AC20E4B9696748026813 /* Pods-prompt_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE8F94E56B0EE320E6A13B82D189AFB /* Pods-prompt_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F255A2924C19CC5EE4DA28B7E7D0CB48 /* Pods-prompt_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF245A441FCFC3C3945EC6EF679E91 /* Pods-prompt_Tests-dummy.m */; };
 		F438664702499ED9755AD6A4CAD5C83C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
@@ -71,8 +71,8 @@
 		A85074CBDA1EDEC712A673D7705DEF49 /* Pods-prompt_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-prompt_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A8C5F1BBBF70C0CB79B18029DFAFF4B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA6A8CB1EA12EBB6425B3B7FB2EAF2AA /* Pods-prompt_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-prompt_Example.modulemap"; sourceTree = "<group>"; };
-		AAF14E692232DD3900C813FE /* PromptLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptLevel.swift; sourceTree = "<group>"; };
-		AAF14E6B2232DE4B00C813FE /* PromptStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptStyle.swift; sourceTree = "<group>"; };
+		AAF14E6F2232DFD800C813FE /* PromptLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromptLevel.swift; path = Prompt/Classes/PromptLevel.swift; sourceTree = "<group>"; };
+		AAF14E702232DFD800C813FE /* PromptStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromptStyle.swift; path = Prompt/Classes/PromptStyle.swift; sourceTree = "<group>"; };
 		B05CA920B259DEB35AF3248F682AE1B7 /* Pods-prompt_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-prompt_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B4454EA5F07B86E13530CD1784C11F0B /* Pods-prompt_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-prompt_Example-dummy.m"; sourceTree = "<group>"; };
 		C502B49FE8CC70EFA0FE2706F0667AC4 /* StatusBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusBarView.swift; path = Prompt/Classes/StatusBarView.swift; sourceTree = "<group>"; };
@@ -231,13 +231,13 @@
 		FA0407C817DFDFA1B68F649E1EBE0988 /* Prompt */ = {
 			isa = PBXGroup;
 			children = (
+				AAF14E6F2232DFD800C813FE /* PromptLevel.swift */,
+				AAF14E702232DFD800C813FE /* PromptStyle.swift */,
 				F34B445F7E8BD1BB76FB0A300C3ABDDE /* ContainerView.swift */,
 				049FC01FDBC7D356D7138943FD16675E /* Prompt.swift */,
 				C502B49FE8CC70EFA0FE2706F0667AC4 /* StatusBarView.swift */,
 				8D6EEC3D8BBA5C6A8B388E9E0A176DB8 /* Pod */,
 				7A83AA229396034D86051E1F254C9DE7 /* Support Files */,
-				AAF14E692232DD3900C813FE /* PromptLevel.swift */,
-				AAF14E6B2232DE4B00C813FE /* PromptStyle.swift */,
 			);
 			name = Prompt;
 			path = ../..;
@@ -391,10 +391,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF14E6D2232DE9C00C813FE /* PromptLevel.swift in Sources */,
+				AAF14E712232DFD800C813FE /* PromptLevel.swift in Sources */,
 				71AA456D5D931A56DBDA35B6C515BABF /* ContainerView.swift in Sources */,
 				992C9212588F4F62C66BECBED469C862 /* Prompt-dummy.m in Sources */,
-				AAF14E6E2232DE9C00C813FE /* PromptStyle.swift in Sources */,
+				AAF14E722232DFD800C813FE /* PromptStyle.swift in Sources */,
 				9BF38349C5E6659F8E4C38EDB3BAF969 /* Prompt.swift in Sources */,
 				9277BAB98C9D6ADCAB88798C20FD7A42 /* StatusBarView.swift in Sources */,
 			);
